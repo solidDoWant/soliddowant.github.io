@@ -1,0 +1,5 @@
+<div class="post">
+    {% include post-header.html post=include.post %}
+    <p>{{ include.post.excerpt }}</p>
+    {% include tag-list.html tags=post.tags %}
+</div>

@@ -1,0 +1,11 @@
+---
+layout: default
+title: Home
+description: Projects, tips, and techniques for hardware and software design.
+---
+{% for post in site.posts %}
+{% include post-preview.html post=post %}
+{% unless forloop.last %}
+<hr class="section-break" />
+{% endunless %}
+{% endfor %}

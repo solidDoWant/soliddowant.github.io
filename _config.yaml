@@ -1,0 +1,17 @@
+---
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+plugins:
+  - jekyll-feed
+  - jekyll-target-blank
+
+permalink: "/:categories/:year/:month/:day/:title"

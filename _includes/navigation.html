@@ -1,0 +1,29 @@
+<header>
+  <nav>
+    <div class="site-title">
+      <a href="/">
+        <h1>&amp;for_reference</h1>
+      </a>
+    </div>
+    <div class="nav-items">
+      {% for item in site.data.navigation %}
+      <div class="nav-item">
+        <a href="{{ item.link }}" {% if page.url==item.link %}class="current" {% endif %} {% if item.target
+          %}target="{{ item.target }}" {% endif %}>
+          {% if item.icon %}
+          <div class="nav-icon">
+            <img src="{{ item.icon }}" alt="{{ item.name }}" />
+          </div>
+          {% endif %}
+          <div class="nav-text">
+            <h3>
+              {{ item.name }}
+            </h3>
+          </div>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </nav>
+  <hr class="section-break" />
+</header>

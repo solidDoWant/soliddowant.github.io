@@ -1,0 +1,46 @@
+---
+layout: default
+title: Search
+description: Site search.
+---
+{% assign testvar.url = "value" %}
+{% capture post_preview %}
+<div class="post-header">
+    <a href="{url}">
+        <h1>{title}</h1>
+    </a>
+    <h4>{date}</h4>
+</div>
+<p>{excerpt}</p>
+<div class="tags">
+    <h4>Tags:</h4>
+    {tags}
+</div>
+<hr class="section-break" />
+{% endcapture %}
+
+<div class="search-container">
+    <input type="text" id="search-input" placeholder="Search posts...">
+    <div id="results-container"></div>
+</div>
+
+<script src="/assets/js/search.js" type="text/javascript"></script>
+
+<script>
+    SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        json: '/assets/js/search.json',
+        searchResultTemplate: '{{ post_preview | strip_newlines }}',
+        templateMiddleware: function (prop, value, template) {
+            if (prop === 'tags') {
+                if(value.length === 0) {
+                    return "<h4>untagged</h4>"
+                }
+                return "<h4>[" + value.join("]</h4>\r\n<h4>[") + "]</h4>"
+            }
+            return value
+        },
+        noResultsText: "<h4 class=\"no-results-found\">No results found</h4>"
+    })
+</script>

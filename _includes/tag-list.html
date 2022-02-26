@@ -1,0 +1,9 @@
+<div class="tags">
+    <h4>Tags:</h4>
+    {% for tag in include.tags %}
+    <h4>[{{ tag }}]</h4>
+    {% endfor %}
+    {% unless include.tags.size > 0 %}
+    <h4>untagged</h4>
+    {% endunless %}
+</div>

@@ -1,0 +1,21 @@
+{
+    "[markdown]":{
+        "editor.wordWrap": "wordWrapColumn",
+        "editor.wordWrapColumn": 120,
+    },
+    "cSpell.words": [
+        "Bloons",
+        "configurability",
+        "decompiled",
+        "Factorio",
+        "Minecraft",
+        "modder",
+        "modders",
+        "Planetbase",
+        "Rimworld",
+        "Skyrim",
+        "Spiritfarer",
+        "unfixable",
+        "XKCD"
+    ],
+}

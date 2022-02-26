@@ -1,0 +1,14 @@
+---
+- name: Home
+  link: /
+- name: RSS
+  link: /feed.xml
+  icon: /assets/images/rss.svg
+- name: Tags
+  link: /tags
+- name: Search
+  link: /search
+- name: GitHub
+  link: https://github.com/solidDoWant
+  icon: /assets/images/github.svg
+  # target: _blank

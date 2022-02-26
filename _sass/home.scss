@@ -1,0 +1,24 @@
+.post-header {
+    margin-bottom: 0.5rem;
+    display: block;
+    h1 {
+        line-height: 0.8;
+        padding-bottom: 0.3rem;
+    }
+
+    a {
+        border-bottom-width: 0.1rem;
+        margin-bottom: 0.3rem;
+    }
+}
+
+.tags {
+    margin-top: 0.5em;
+    h4 {
+        display: inline-block;
+    }
+}
+
+p {
+    line-height: 1.5rem;
+}
