@@ -80,7 +80,7 @@ If there is one thing to take away from this article it's this: don't try and ha
 * Pursue legal action against mod makers
 * Change your code base with the intent to make it harder for mod makers to maintain their projects
 
-Piracy and mods designed and distributed to remove licensing requirements are clear exceptions to this. .
+Piracy and mods designed and distributed to remove licensing requirements are clear exceptions to this.
 
 ## What's next?
-The next post in this series will outline mod loaders - what they are and how they work.
+The next post in this series will background research - things we need to know before diving into the code.
