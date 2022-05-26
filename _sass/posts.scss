@@ -3,9 +3,24 @@ article {
         color: #03adfc;
         font-weight: bold;
         display: inline;
+
         &:visited {
             color: #7703fc;
         }
+        
+        &[href^="#"] {
+            color: inherit;
+            font-weight: inherit;
+        }
+
+        &.image-link:hover {
+            // Disable underline on images wrapped with a link
+            border-bottom-color: transparent;
+        }
+    }
+
+    a:has(img) {
+        border-bottom-color: transparent;
     }
 
     h2, h3, h4, h5, h6, p, ul, ol {
@@ -30,5 +45,11 @@ article {
         border-radius: 0.25rem;
         border: 0.1rem solid #ddd;
         padding: 0.1rem;
+    }
+
+    img {
+        width: 100%;
+        border: 0.1rem solid #666;
+        border-radius: 0.25rem;
     }
 }
