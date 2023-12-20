@@ -15,3 +15,5 @@ plugins:
   - jekyll-target-blank
 
 permalink: "/:categories/:year/:month/:day/:title"
+
+excerpt_separator: <!--more-->

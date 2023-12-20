@@ -1,0 +1,9 @@
+<div class="grafana-snapshot">
+    <div class="grafana-snapshot-iframe">
+        <iframe src="{{ include.snapshot-url }}" width="450" height="850" frameborder="0">
+        </iframe>
+    </div>
+    {% if include.caption %}
+    <figcaption>{{ include.caption }}</figcaption>
+    {% endif %}
+</div>

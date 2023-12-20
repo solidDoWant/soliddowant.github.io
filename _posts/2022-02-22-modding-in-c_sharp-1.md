@@ -7,6 +7,8 @@ tags:
 
 In this series I am going to cover (nearly) everything I know regarding writing mods for .NET games. I've written and contributed to several mods over the years for different games, including [Minecraft](https://www.minecraft.net/en-us/store/minecraft-java-edition), [Planetbase](https://store.steampowered.com/app/403190/Planetbase/), [Bloons Tower Defense 6](https://store.steampowered.com/app/960090/Bloons_TD_6/), and [Spiritfarer](https://store.steampowered.com/app/972660/Spiritfarer_Farewell_Edition/). This series will primarily focus on buildings mods and modding support from scratch for [Unity](https://unity.com/)-based video games. This post will detail broad topics regarding modding applicable to all software.
 
+<!--more-->
+
 ## What is modding?
 In regards to software, "modding" is the act of changing a piece of software (usually closed source) to change it's behavior. This can range from changing the color of text somewhere to replacing a core feature of the software.
 
