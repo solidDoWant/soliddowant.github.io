@@ -1,0 +1,28 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
+{
+	"name": "Ubuntu",
+	"image": "mcr.microsoft.com/devcontainers/base:jammy",
+	"features": {
+		"ghcr.io/devcontainers/features/ruby:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers/features/github-cli": {
+			"version": "latest"
+		}
+	},
+	"forwardPorts": [
+		4000 // Jekyll port
+	],
+	"onCreateCommand": "gem install jekyll bundler",
+	"postCreateCommand": "bundler install && (bundler exec jekyll serve --watch --livereload 2>&1 >> /tmp/jekyll-serve; echo 'EXIT CODE $?' >> /tmp/exitcode &)",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ginfuru.ginfuru-vscode-jekyll-syntax",
+				"yzhang.markdown-all-in-one",
+				"ban.spellright"
+			]
+		}
+	}
+}
