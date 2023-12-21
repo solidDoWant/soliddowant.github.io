@@ -1,0 +1,9 @@
+<figure class="captioned-image">
+    <a href="{{ include.href }}" class="image-link">
+        <img src="{{ include.href }}" {% if include.alt %}alt="{{ include.alt }}" {% endif %}>
+{% comment %}
+Critical: this must be saved as is without moving the figure tag to another line. Otherwise,
+the closing tag will be duplicated and written as a literal `&lt;figure&gt;` text.
+For details, see https://stackoverflow.com/questions/59880835/jekyll-includes-escapes-closing-tags
+{% endcomment %}
+    </a>{% if include.alt %}<figcaption>{{ include.alt }}</figcaption>{% endif %}</figure>
