@@ -14,14 +14,18 @@ article,
             font-weight: inherit;
         }
 
-        &.image-link:hover {
-            // Disable underline on images wrapped with a link
-            border-bottom-color: transparent;
-        }
-    }
+        &:hover {
 
-    a:has(img) {
-        border-bottom-color: transparent;
+            &.image-link,
+            &:has(img) {
+                // Disable underline on images, code wrapped with a link
+                border-bottom-color: transparent;
+            }
+        }
+
+        &:has(code) {
+            padding-bottom: 0.2rem;
+        }
     }
 
     h2,
@@ -31,7 +35,8 @@ article,
     h6,
     p,
     ul,
-    ol {
+    ol,
+    pre code {
         margin-bottom: 1rem;
     }
 
@@ -53,6 +58,14 @@ article,
         border-radius: 0.25rem;
         border: 0.1rem solid #ddd;
         padding: 0.1rem;
+        display: inline-block;
+        line-height: 1rem;
+    }
+
+    pre code {
+        width: 100%;
+        text-wrap: pretty;
+        hyphenate-character: "";
     }
 
     img {

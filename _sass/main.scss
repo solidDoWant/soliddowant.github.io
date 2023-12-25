@@ -25,17 +25,19 @@ a {
     padding-bottom: 0;
     border-bottom: 0.2rem solid transparent;
     display: inline-block;
+
     &:hover {
         border-bottom-color: black;
     }
 }
 
-header, footer {
+header,
+footer {
     .section-break {
         width: 15rem;
     }
 }
 
 footer {
-    margin-top:auto; 
+    margin-top: auto;
 }

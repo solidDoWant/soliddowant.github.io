@@ -19,9 +19,6 @@ description: All posts categorized by tag.
           </h3>
           <p>{{ post.date | date_to_string: "ordinal", "US" }}</p>
         </div>
-        <p>
-          {{ post.excerpt }}
-        </p>
       </li>
       {% endfor %}
     </ul>
