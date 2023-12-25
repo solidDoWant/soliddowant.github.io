@@ -13,7 +13,11 @@ defaults:
 plugins:
   - jekyll-feed
   - jekyll-target-blank
+  - jekyll-relative-links
 
 permalink: "/:categories/:year/:month/:day/:title"
+
+relative_links:
+  collections: true
 
 excerpt_separator: <!--more-->
