@@ -1,0 +1,491 @@
+Tue Jan  3 00:25:58 2023 kern.notice kernel: [    0.000000] Linux version 5.10.161 (root@15131c0a4e65) (mipsel-openwrt-linux-musl-gcc (OpenWrt GCC 11.2.0 r20028-43d71ad93e) 11.2.0, GNU ld (GNU Binutils) 2.37) #0 Tue Jan 3 00:24:21 2023
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.000000] Board has DDR2
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.000000] Analog PMU set to hw control
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.000000] Digital PMU set to hw control
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.000000] SoC Type: MediaTek MT7620A ver:2 eco:6
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.000000] printk: bootconsole [early0] enabled
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.000000] CPU0 revision is: 00019650 (MIPS 24KEc)
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.000000] MIPS: machine is MC-CLUSTERBOX
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.000000] Initrd not found or empty - disabling initrd
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.000000] Primary instruction cache 64kB, VIPT, 4-way, linesize 32 bytes.
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.000000] Primary data cache 32kB, 4-way, PIPT, no aliases, linesize 32 bytes
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.000000] Zone ranges:
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.000000]   Normal   [mem 0x0000000000000000-0x000000000fffffff]
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.000000] Movable zone start for each node
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.000000] Early memory node ranges
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.000000]   node   0: [mem 0x0000000000000000-0x000000000fffffff]
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.000000] Initmem setup node 0 [mem 0x0000000000000000-0x000000000fffffff]
+Tue Jan  3 00:25:58 2023 kern.debug kernel: [    0.000000] On node 0 totalpages: 65536
+Tue Jan  3 00:25:58 2023 kern.debug kernel: [    0.000000]   Normal zone: 576 pages used for memmap
+Tue Jan  3 00:25:58 2023 kern.debug kernel: [    0.000000]   Normal zone: 0 pages reserved
+Tue Jan  3 00:25:58 2023 kern.debug kernel: [    0.000000]   Normal zone: 65536 pages, LIFO batch:15
+Tue Jan  3 00:25:58 2023 kern.debug kernel: [    0.000000] pcpu-alloc: s0 r0 d32768 u32768 alloc=1*32768
+Tue Jan  3 00:25:58 2023 kern.debug kernel: [    0.000000] pcpu-alloc: [0] 0
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 64960
+Tue Jan  3 00:25:58 2023 kern.notice kernel: [    0.000000] Kernel command line: console=ttyS0,57600 rootfstype=squashfs,jffs2
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.000000] Dentry cache hash table entries: 32768 (order: 5, 131072 bytes, linear)
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.000000] Inode-cache hash table entries: 16384 (order: 4, 65536 bytes, linear)
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.000000] Writing ErrCtl register=0007bbf0
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.000000] Readback ErrCtl register=0007bbf0
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.000000] mem auto-init: stack:off, heap alloc:off, heap free:off
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.000000] Memory: 251020K/262144K available (5337K kernel code, 616K rwdata, 1132K rodata, 1224K init, 209K bss, 11124K reserved, 0K cma-reserved)
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.000000] SLUB: HWalign=32, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.000000] NR_IRQS: 256
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.000000] CPU Clock: 580MHz
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.000000] clocksource: systick: mask: 0xffff max_cycles: 0xffff, max_idle_ns: 583261500 ns
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.000000] systick: enable autosleep mode
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.000000] systick: running - mult: 214748, shift: 32
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.000000] clocksource: MIPS: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 6590553264 ns
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.000012] sched_clock: 32 bits at 290MHz, resolution 3ns, wraps every 7405115902ns
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.015578] Calibrating delay loop... 385.84 BogoMIPS (lpj=1929216)
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.087815] pid_max: default: 32768 minimum: 301
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.097210] Mount-cache hash table entries: 1024 (order: 0, 4096 bytes, linear)
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.111615] Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes, linear)
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.129765] dyndbg: Ignore empty _ddebug table in a CONFIG_DYNAMIC_DEBUG_CORE build
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.149833] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.169322] futex hash table entries: 256 (order: -1, 3072 bytes, linear)
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.182921] pinctrl core: initialized pinctrl subsystem
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.194464] NET: Registered protocol family 16
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.479312] PCI host bridge /pcie@10140000 ranges:
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.488728]  MEM 0x0000000020000000..0x000000002fffffff
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.499089]   IO 0x0000000010160000..0x000000001016ffff
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.568875] rt2880_gpio 10000600.gpio: registering 24 gpios
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.579940] rt2880_gpio 10000600.gpio: registering 24 irq handlers
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.592546] rt2880_gpio 10000638.gpio: registering 16 gpios
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.603567] rt2880_gpio 10000638.gpio: registering 16 irq handlers
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.616184] rt2880_gpio 10000660.gpio: registering 32 gpios
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.627205] rt2880_gpio 10000660.gpio: registering 32 irq handlers
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.639827] rt2880_gpio 10000688.gpio: registering 1 gpios
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.650674] rt2880_gpio 10000688.gpio: registering 1 irq handlers
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.664227] i2c-ralink 10000900.i2c: clock 100KHz, re-start support
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.678045] PCI host bridge to bus 0000:00
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.686057] pci_bus 0000:00: root bus resource [mem 0x20000000-0x2fffffff]
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.699784] pci_bus 0000:00: root bus resource [io  0x10160000-0x1016ffff]
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.713395] pci_bus 0000:00: root bus resource [??? 0x00000000 flags 0x0]
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.726894] pci_bus 0000:00: No busn resource found for root bus, will use [bus 00-ff]
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.742708] pci 0000:00:00.0: [1814:0801] type 01 class 0x060400
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.754607] pci 0000:00:00.0: reg 0x10: [mem 0x00000000-0x7fffffff]
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.767053] pci 0000:00:00.0: reg 0x14: [mem 0x20400000-0x2040ffff]
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.779592] pci 0000:00:00.0: supports D1
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.787464] pci 0000:00:00.0: PME# supported from D0 D1 D3hot
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.801111] pci 0000:01:00.0: [1b21:2824] type 01 class 0x060400
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.813039] pci 0000:01:00.0: enabling Extended Tags
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.822898] pci 0000:01:00.0: PME# supported from D0 D3hot D3cold
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.834947] pci 0000:01:00.0: 2.000 Gb/s available PCIe bandwidth, limited by 2.5 GT/s PCIe x1 link at 0000:00:00.0 (capable of 63.008 Gb/s with 8.0 GT/s PCIe x8 link)
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.866665] pci 0000:01:00.0: bridge configuration invalid ([bus 00-00]), reconfiguring
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.882743] pci 0000:02:00.0: [1b21:2824] type 01 class 0x060400
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.894649] pci 0000:02:00.0: enabling Extended Tags
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.904524] pci 0000:02:00.0: PME# supported from D0 D3hot D3cold
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.917152] pci 0000:02:04.0: [1b21:2824] type 01 class 0x060400
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.929061] pci 0000:02:04.0: enabling Extended Tags
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.938925] pci 0000:02:04.0: PME# supported from D0 D3hot D3cold
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.951539] pci 0000:02:08.0: [1b21:2824] type 01 class 0x060400
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.963450] pci 0000:02:08.0: enabling Extended Tags
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.973316] pci 0000:02:08.0: PME# supported from D0 D3hot D3cold
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.985920] pci 0000:02:0c.0: [1b21:2824] type 01 class 0x060400
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    0.997829] pci 0000:02:0c.0: enabling Extended Tags
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    1.007695] pci 0000:02:0c.0: PME# supported from D0 D3hot D3cold
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    1.021154] pci 0000:02:00.0: bridge configuration invalid ([bus 00-00]), reconfiguring
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    1.036979] pci 0000:02:04.0: bridge configuration invalid ([bus 00-00]), reconfiguring
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    1.052867] pci 0000:02:08.0: bridge configuration invalid ([bus 00-00]), reconfiguring
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    1.068791] pci 0000:02:0c.0: bridge configuration invalid ([bus 00-00]), reconfiguring
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    1.086504] pci_bus 0000:03: busn_res: [bus 03-ff] end is updated to 03
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    1.101333] pci_bus 0000:04: busn_res: [bus 04-ff] end is updated to 04
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    1.116180] pci_bus 0000:05: busn_res: [bus 05-ff] end is updated to 05
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    1.131033] pci_bus 0000:06: busn_res: [bus 06-ff] end is updated to 06
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    1.144085] pci_bus 0000:02: busn_res: [bus 02-ff] end is updated to 06
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    1.157207] pci_bus 0000:01: busn_res: [bus 01-ff] end is updated to 06
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    1.170356] pci_bus 0000:00: busn_res: [bus 00-ff] end is updated to 06
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    1.183569] pci 0000:00:00.0: BAR 0: no space for [mem size 0x80000000]
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    1.196663] pci 0000:00:00.0: BAR 0: failed to assign [mem size 0x80000000]
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    1.210510] pci 0000:00:00.0: BAR 1: assigned [mem 0x20000000-0x2000ffff]
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    1.224016] pci 0000:02:00.0: PCI bridge to [bus 03]
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    1.233887] pci 0000:02:04.0: PCI bridge to [bus 04]
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    1.243756] pci 0000:02:08.0: PCI bridge to [bus 05]
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    1.253612] pci 0000:02:0c.0: PCI bridge to [bus 06]
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    1.263488] pci 0000:01:00.0: PCI bridge to [bus 02-06]
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    1.273871] pci 0000:00:00.0: PCI bridge to [bus 01-06]
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    1.303150] clocksource: Switched to clocksource systick
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    1.315262] NET: Registered protocol family 2
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    1.324220] IP idents hash table entries: 4096 (order: 3, 32768 bytes, linear)
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    1.339540] tcp_listen_portaddr_hash hash table entries: 512 (order: 0, 4096 bytes, linear)
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    1.356180] TCP established hash table entries: 2048 (order: 1, 8192 bytes, linear)
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    1.371323] TCP bind hash table entries: 2048 (order: 1, 8192 bytes, linear)
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    1.385325] TCP: Hash tables configured (established 2048 bind 2048)
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    1.398125] UDP hash table entries: 256 (order: 0, 4096 bytes, linear)
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    1.411041] UDP-Lite hash table entries: 256 (order: 0, 4096 bytes, linear)
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    1.425232] NET: Registered protocol family 1
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    1.433944] PCI: CLS 80 bytes, default 32
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    1.448249] rt-timer 10000100.timer: maximum frequency is 1220Hz
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    1.463765] workingset: timestamp_bits=14 max_order=16 bucket_order=2
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    1.482087] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    1.493625] jffs2: version 2.2 (NAND) (SUMMARY) (LZMA) (RTIME) (CMODE_PRIORITY) (c) 2001-2006 Red Hat, Inc.
+Tue Jan  3 00:25:58 2023 kern.warn kernel: [    1.516845] file:drivers/pwm/pwm-gpio.c fun:gpio_pwms_get_devtree_pdata line:254 npwms:2
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    1.532921] gpio-pwms gpio-pwms: get rpm labels successed
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    1.543558] gpio-pwms gpio-pwms: get gdesc successed
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    1.553432] gpio-pwms gpio-pwms: get rpm gpio irq successed
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    1.564531] gpio-pwms gpio-pwms: request irq successed
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    1.574737] gpio-pwms gpio-pwms: get rpm labels successed
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    1.585432] gpio-pwms gpio-pwms: get gdesc successed
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    1.595298] gpio-pwms gpio-pwms: get rpm gpio irq successed
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    1.606390] gpio-pwms gpio-pwms: request irq successed
+Tue Jan  3 00:25:58 2023 kern.warn kernel: [    1.616638] successed to request gpio
+Tue Jan  3 00:25:58 2023 kern.warn kernel: [    1.623867] successed to request rpm  gpio
+Tue Jan  3 00:25:58 2023 kern.warn kernel: [    1.632130] successed to request gpio
+Tue Jan  3 00:25:58 2023 kern.warn kernel: [    1.639282] successed to request rpm  gpio
+Tue Jan  3 00:25:58 2023 kern.err kernel: [    1.647709] pcieport 0000:00:00.0: card - bus=0x0, slot = 0x0 irq=0
+Tue Jan  3 00:25:58 2023 kern.err kernel: [    1.660200] pcieport 0000:01:00.0: card - bus=0x1, slot = 0x0 irq=4
+Tue Jan  3 00:25:58 2023 kern.err kernel: [    1.672820] pcieport 0000:02:00.0: card - bus=0x2, slot = 0x0 irq=4
+Tue Jan  3 00:25:58 2023 kern.err kernel: [    1.685537] pcieport 0000:02:04.0: card - bus=0x2, slot = 0x0 irq=4
+Tue Jan  3 00:25:58 2023 kern.err kernel: [    1.698276] pcieport 0000:02:08.0: card - bus=0x2, slot = 0x0 irq=4
+Tue Jan  3 00:25:58 2023 kern.err kernel: [    1.711009] pcieport 0000:02:0c.0: card - bus=0x2, slot = 0x0 irq=4
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    1.723961] Serial: 8250/16550 driver, 2 ports, IRQ sharing disabled
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    1.737740] printk: console [ttyS0] disabled
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    1.746266] 10000c00.uartlite: ttyS0 at MMIO 0x10000c00 (irq = 20, base_baud = 2500000) is a Palmchip BK-3103
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    1.765900] printk: console [ttyS0] enabled
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    1.782486] printk: bootconsole [early0] disabled
+Tue Jan  3 00:25:58 2023 kern.warn kernel: [    1.819053] spi spi0.0: force spi mode3
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    1.828265] spi-nor spi0.0: w25q128 (16384 Kbytes)
+Tue Jan  3 00:25:58 2023 kern.notice kernel: [    1.837956] 4 fixed-partitions partitions found on MTD device spi0.0
+Tue Jan  3 00:25:58 2023 kern.err kernel: [    1.850707] OF: Bad cell count for /palmbus@10000000/spi@b00/flash@0/partitions
+Tue Jan  3 00:25:58 2023 kern.err kernel: [    1.865317] OF: Bad cell count for /palmbus@10000000/spi@b00/flash@0/partitions
+Tue Jan  3 00:25:58 2023 kern.notice kernel: [    1.880207] Creating 4 MTD partitions on "spi0.0":
+Tue Jan  3 00:25:58 2023 kern.notice kernel: [    1.889819] 0x000000000000-0x000000030000 : "u-boot"
+Tue Jan  3 00:25:58 2023 kern.notice kernel: [    1.902503] 0x000000030000-0x000000040000 : "u-boot-env"
+Tue Jan  3 00:25:58 2023 kern.notice kernel: [    1.914615] 0x000000040000-0x000000050000 : "factory"
+Tue Jan  3 00:25:58 2023 kern.notice kernel: [    1.928024] 0x000000050000-0x000001000000 : "firmware"
+Tue Jan  3 00:25:58 2023 kern.notice kernel: [    1.939945] 2 uimage-fw partitions found on MTD device firmware
+Tue Jan  3 00:25:58 2023 kern.notice kernel: [    1.951854] Creating 2 MTD partitions on "firmware":
+Tue Jan  3 00:25:58 2023 kern.notice kernel: [    1.961767] 0x000000000000-0x00000021ba36 : "kernel"
+Tue Jan  3 00:25:58 2023 kern.warn kernel: [    1.971663] mtd: partition "kernel" doesn't end on an erase/write block -- force read-only
+Tue Jan  3 00:25:58 2023 kern.notice kernel: [    1.991480] 0x00000021ba36-0x000000fb0000 : "rootfs"
+Tue Jan  3 00:25:58 2023 kern.warn kernel: [    2.001473] mtd: partition "rootfs" doesn't start on an erase/write block boundary -- force read-only
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    2.021126] mtd: setting mtd5 (rootfs) as root device
+Tue Jan  3 00:25:58 2023 kern.notice kernel: [    2.032519] 1 squashfs-split partitions found on MTD device rootfs
+Tue Jan  3 00:25:58 2023 kern.notice kernel: [    2.044948] 0x000000930000-0x000000fb0000 : "rootfs_data"
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    2.083879] gsw: ephy base address: 8
+Tue Jan  3 00:25:58 2023 kern.err kernel: [    2.092631] mtk_soc_eth 10100000.ethernet: generated random MAC address 86:b1:77:45:6a:03
+Tue Jan  3 00:25:58 2023 kern.err kernel: [    2.109007] mtk_soc_eth 10100000.ethernet: mdio-bus disabled
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    2.120534] mtk_soc_eth 10100000.ethernet: loaded mt7620 driver
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    2.133220] mtk_soc_eth 10100000.ethernet eth0: mediatek frame engine at 0xb0100000, irq 5
+Tue Jan  3 00:25:58 2023 kern.warn kernel: [    2.154605] rtc-hym8563 0-0051: no valid clock/calendar values available
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    2.168249] rtc-hym8563 0-0051: registered as rtc0
+Tue Jan  3 00:25:58 2023 kern.warn kernel: [    2.179059] rtc-hym8563 0-0051: no valid clock/calendar values available
+Tue Jan  3 00:25:58 2023 kern.err kernel: [    2.192490] rtc-hym8563 0-0051: hctosys: unable to read the hardware clock
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    2.206767] rt2880_wdt 10000120.watchdog: Initialized
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    2.218250] NET: Registered protocol family 10
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    2.232488] Segment Routing with IPv6
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    2.239934] NET: Registered protocol family 17
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    2.248979] 8021q: 802.1Q VLAN Support v1.8
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    2.282394] VFS: Mounted root (squashfs filesystem) readonly on device 31:5.
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    2.303729] Freeing unused kernel memory: 1224K
+Tue Jan  3 00:25:58 2023 kern.warn kernel: [    2.312784] This architecture does not have kernel memory protection.
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    2.325647] Run /sbin/init as init process
+Tue Jan  3 00:25:58 2023 kern.debug kernel: [    2.333809]   with arguments:
+Tue Jan  3 00:25:58 2023 kern.debug kernel: [    2.333815]     /sbin/init
+Tue Jan  3 00:25:58 2023 kern.debug kernel: [    2.333821]   with environment:
+Tue Jan  3 00:25:58 2023 kern.debug kernel: [    2.333828]     HOME=/
+Tue Jan  3 00:25:58 2023 kern.debug kernel: [    2.333833]     TERM=linux
+Tue Jan  3 00:25:58 2023 user.info kernel: [    4.171284] init: Console is alive
+Tue Jan  3 00:25:58 2023 user.info kernel: [    4.178721] init: - watchdog -
+Tue Jan  3 00:25:58 2023 user.info kernel: [    5.530037] kmodloader: loading kernel modules from /etc/modules-boot.d/*
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    5.927604] usbcore: registered new interface driver usbfs
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    5.938744] usbcore: registered new interface driver hub
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    5.949466] usbcore: registered new device driver usb
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    5.965231] usbcore: registered new interface driver usb_ch343
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    5.976941] ch343: USB serial driver for ch342/ch343/ch344/ch347/ch9101/ch9102/ch9103/ch9104, etc.
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    5.994808] ch343: V1.5 On 2022.12
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    6.006368] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    6.021850] ehci-fsl: Freescale EHCI Host controller driver
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    6.036217] ehci-platform: EHCI generic platform driver
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    6.057282] phy phy-usbphy.0: remote usb device wakeup disabled
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    6.069099] phy phy-usbphy.0: UTMI 16bit 30MHz
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    6.077966] ehci-platform 101c0000.ehci: EHCI Host Controller
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    6.089454] ehci-platform 101c0000.ehci: new USB bus registered, assigned bus number 1
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    6.105412] ehci-platform 101c0000.ehci: irq 26, io mem 0x101c0000
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    6.125929] ehci-platform 101c0000.ehci: USB 2.0 started, EHCI 1.00
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    6.139658] hub 1-0:1.0: USB hub found
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    6.148244] hub 1-0:1.0: 1 port detected
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    6.165688] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    6.180006] ohci-platform: OHCI generic platform driver
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    6.191025] ohci-platform 101c1000.ohci: Generic Platform OHCI controller
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    6.204638] ohci-platform 101c1000.ohci: new USB bus registered, assigned bus number 2
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    6.220579] ohci-platform 101c1000.ohci: irq 26, io mem 0x101c1000
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    6.260114] hub 2-0:1.0: USB hub found
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    6.268770] hub 2-0:1.0: 1 port detected
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    6.281335] uhci_hcd: USB Universal Host Controller Interface driver
+Tue Jan  3 00:25:58 2023 user.info kernel: [    6.298165] kmodloader: done loading kernel modules from /etc/modules-boot.d/*
+Tue Jan  3 00:25:58 2023 user.info kernel: [    6.317299] init: - preinit -
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    6.489266] usb 1-1: new high-speed USB device number 2 using ehci-platform
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    7.343836] usb_ch343 1-1:1.0: ttyCH343USB0: usb to uart device
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    7.648162] usb_ch343 1-1:1.2: ttyCH343USB1: usb to uart device
+Tue Jan  3 00:25:58 2023 kern.notice kernel: [    7.671483] random: procd: uninitialized urandom read (4 bytes read)
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    7.690990] usb_ch343 1-1:1.4: ttyCH343USB2: usb to uart device
+Tue Jan  3 00:25:58 2023 kern.info kernel: [    8.073010] usb_ch343 1-1:1.6: ttyCH343USB3: usb to uart device
+Tue Jan  3 00:25:58 2023 kern.notice kernel: [    9.462773] random: jshn: uninitialized urandom read (4 bytes read)
+Tue Jan  3 00:25:58 2023 kern.notice kernel: [    9.595647] random: jshn: uninitialized urandom read (4 bytes read)
+Tue Jan  3 00:25:58 2023 kern.notice kernel: [    9.921467] random: jshn: uninitialized urandom read (4 bytes read)
+Tue Jan  3 00:25:58 2023 kern.info kernel: [   11.226261] 8021q: adding VLAN 0 to HW filter on device eth0
+Tue Jan  3 00:25:58 2023 kern.notice kernel: [   14.155543] jffs2: notice: (493) jffs2_build_xattr_subsystem: complete building xattr subsystem, 124 of xdatum (14 unchecked, 110 orphan) and 129 of xref (99 dead, 13 orphan) found.
+Tue Jan  3 00:25:58 2023 user.info kernel: [   14.191552] mount_root: switching to jffs2 overlay
+Tue Jan  3 00:25:58 2023 kern.warn kernel: [   14.218633] overlayfs: upper fs does not support tmpfile.
+Tue Jan  3 00:25:58 2023 user.warn kernel: [   14.241278] urandom-seed: Seeding with /etc/urandom.seed
+Tue Jan  3 00:25:58 2023 user.info kernel: [   14.572685] procd: - early -
+Tue Jan  3 00:25:58 2023 user.info kernel: [   14.580113] procd: - watchdog -
+Tue Jan  3 00:25:58 2023 user.info kernel: [   15.422848] procd: - watchdog -
+Tue Jan  3 00:25:58 2023 user.info kernel: [   15.794490] procd: - ubus -
+Tue Jan  3 00:25:58 2023 kern.notice kernel: [   16.340583] random: ubusd: uninitialized urandom read (4 bytes read)
+Tue Jan  3 00:25:58 2023 kern.notice kernel: [   16.357157] random: ubusd: uninitialized urandom read (4 bytes read)
+Tue Jan  3 00:25:58 2023 kern.notice kernel: [   16.370667] random: ubusd: uninitialized urandom read (4 bytes read)
+Tue Jan  3 00:25:58 2023 user.info kernel: [   16.388674] procd: - init -
+Tue Jan  3 00:25:58 2023 kern.warn kernel: [   17.199734] rtc-hym8563 0-0051: no valid clock/calendar values available
+Tue Jan  3 00:25:58 2023 user.info kernel: [   18.610870] kmodloader: loading kernel modules from /etc/modules.d/*
+Tue Jan  3 00:25:58 2023 kern.info kernel: [   18.920197] i2c /dev entries driver
+Tue Jan  3 00:25:58 2023 kern.info kernel: [   18.939023] pca953x 0-0024: using no AI
+Tue Jan  3 00:25:58 2023 kern.info kernel: [   18.968021] usbcore: registered new interface driver cdc_acm
+Tue Jan  3 00:25:58 2023 kern.info kernel: [   18.979383] cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+Tue Jan  3 00:25:58 2023 kern.warn kernel: [   19.005006] miop: module license 'MIXTILE' taints kernel.
+Tue Jan  3 00:25:58 2023 kern.warn kernel: [   19.015865] Disabling lock debugging due to kernel taint
+Tue Jan  3 00:25:58 2023 kern.info kernel: [   19.161757] PPP generic driver version 2.4.2
+Tue Jan  3 00:25:58 2023 kern.info kernel: [   19.177890] NET: Registered protocol family 24
+Tue Jan  3 00:25:58 2023 user.info kernel: [   19.207966] kmodloader: done loading kernel modules from /etc/modules.d/*
+Tue Jan  3 00:25:58 2023 kern.notice kernel: [   21.544443] random: jshn: uninitialized urandom read (4 bytes read)
+Tue Jan  3 00:25:58 2023 kern.notice kernel: [   21.816803] random: ubusd: uninitialized urandom read (4 bytes read)
+Tue Jan  3 00:25:58 2023 kern.notice kernel: [   21.830000] random: ubus: uninitialized urandom read (4 bytes read)
+Tue Jan  3 00:26:01 2023 kern.info kernel: [   26.875643] do_page_fault(): sending SIGSEGV to S19dnsmasq for invalid write access to 00000000
+Tue Jan  3 00:26:01 2023 kern.info kernel: [   26.893079] epc = 77e34e00 in libc.so[77e03000+a9000]
+Tue Jan  3 00:26:01 2023 kern.info kernel: [   26.903208] ra  = 77e34dbc in libc.so[77e03000+a9000]
+Tue Jan  3 00:26:01 2023 daemon.notice procd: /etc/rc.d/S19dropbear: /etc/rc.common: /etc/rc.d/S19dropbear: line 32: syntax error: unexpected word (expecting ")")
+Tue Jan  3 00:26:02 2023 kern.notice kernel: [   27.923949] random: crng init done
+Tue Jan  3 00:26:02 2023 kern.notice kernel: [   27.930769] random: 53 urandom warning(s) missed due to ratelimiting
+Tue Jan  3 00:26:11 2023 daemon.notice wpa_supplicant[1039]: Successfully initialized wpa_supplicant
+Tue Jan  3 00:26:12 2023 user.notice : Added device handler type: bonding
+Tue Jan  3 00:26:12 2023 user.notice : Added device handler type: 8021ad
+Tue Jan  3 00:26:12 2023 user.notice : Added device handler type: 8021q
+Tue Jan  3 00:26:12 2023 user.notice : Added device handler type: macvlan
+Tue Jan  3 00:26:12 2023 user.notice : Added device handler type: veth
+Tue Jan  3 00:26:12 2023 user.notice : Added device handler type: bridge
+Tue Jan  3 00:26:12 2023 user.notice : Added device handler type: Network device
+Tue Jan  3 00:26:12 2023 user.notice : Added device handler type: tunnel
+Tue Jan  3 00:26:14 2023 kern.info kernel: [   40.129500] 8021q: adding VLAN 0 to HW filter on device eth0
+Tue Jan  3 00:26:14 2023 kern.info kernel: [   40.187880] device eth0 entered promiscuous mode
+Tue Jan  3 00:26:14 2023 kern.info kernel: [   40.224776] br-lan: port 1(eth0.1) entered blocking state
+Tue Jan  3 00:26:14 2023 kern.info kernel: [   40.235669] br-lan: port 1(eth0.1) entered disabled state
+Tue Jan  3 00:26:14 2023 kern.info kernel: [   40.246875] device eth0.1 entered promiscuous mode
+Tue Jan  3 00:26:15 2023 kern.info kernel: [   40.357332] br-lan: port 1(eth0.1) entered blocking state
+Tue Jan  3 00:26:15 2023 kern.info kernel: [   40.368207] br-lan: port 1(eth0.1) entered forwarding state
+Tue Jan  3 00:26:15 2023 daemon.notice netifd: Interface 'lan' is enabled
+Tue Jan  3 00:26:15 2023 daemon.notice netifd: Interface 'lan' is setting up now
+Tue Jan  3 00:26:15 2023 daemon.notice netifd: Interface 'lan' is now up
+Tue Jan  3 00:26:15 2023 daemon.notice netifd: bridge 'br-lan' link is up
+Tue Jan  3 00:26:15 2023 daemon.notice netifd: Interface 'lan' has link connectivity
+Tue Jan  3 00:26:15 2023 daemon.notice netifd: VLAN 'eth0.1' link is up
+Tue Jan  3 00:26:15 2023 daemon.notice netifd: Interface 'loopback' is enabled
+Tue Jan  3 00:26:15 2023 daemon.notice netifd: Interface 'loopback' is setting up now
+Tue Jan  3 00:26:15 2023 daemon.notice netifd: Interface 'loopback' is now up
+Tue Jan  3 00:26:15 2023 daemon.notice netifd: Interface 'wan' is enabled
+Tue Jan  3 00:26:15 2023 daemon.notice netifd: Interface 'wan6' is enabled
+Tue Jan  3 00:26:15 2023 daemon.notice netifd: Network device 'eth0' link is up
+Tue Jan  3 00:26:15 2023 daemon.notice netifd: Network device 'lo' link is up
+Tue Jan  3 00:26:15 2023 daemon.notice netifd: Interface 'loopback' has link connectivity
+Tue Jan  3 00:26:15 2023 daemon.notice netifd: VLAN 'eth0.2' link is up
+Tue Jan  3 00:26:15 2023 daemon.notice netifd: Interface 'wan' has link connectivity
+Tue Jan  3 00:26:15 2023 daemon.notice netifd: Interface 'wan' is setting up now
+Tue Jan  3 00:26:15 2023 daemon.notice netifd: Interface 'wan6' has link connectivity
+Tue Jan  3 00:26:15 2023 daemon.notice netifd: Interface 'wan6' is setting up now
+Tue Jan  3 00:26:15 2023 daemon.notice procd: /etc/rc.d/S50uhttpd: 4+0 records in
+Tue Jan  3 00:26:15 2023 daemon.notice procd: /etc/rc.d/S50uhttpd: 4+0 records out
+Tue Jan  3 00:26:15 2023 kern.info kernel: [   41.134398] IPv6: ADDRCONF(NETDEV_CHANGE): br-lan: link becomes ready
+Tue Jan  3 00:26:16 2023 daemon.notice netifd: wan (1343): udhcpc: started, v1.35.0
+Tue Jan  3 00:26:16 2023 daemon.err odhcp6c[1345]: Failed to send RS (Address not available)
+Tue Jan  3 00:26:16 2023 daemon.err odhcpd[1137]: Failed to send to ff02::1%lan@br-lan (Address not available)
+Tue Jan  3 00:26:16 2023 daemon.err odhcp6c[1345]: Failed to send SOLICIT message to ff02::1:2 (Address not available)
+Tue Jan  3 00:26:17 2023 daemon.notice netifd: wan (1343): udhcpc: broadcasting discover
+Tue Jan  3 00:26:17 2023 daemon.notice netifd: wan (1343): udhcpc: broadcasting select for 172.16.0.2, server 172.16.0.1
+Tue Jan  3 00:26:17 2023 daemon.notice netifd: wan (1343): udhcpc: lease of 172.16.0.2 obtained from 172.16.0.1, lease time 86400
+Tue Jan  3 00:26:19 2023 user.notice firewall: Reloading firewall due to ifup of lan (br-lan)
+Tue Jan  3 00:26:19 2023 daemon.notice netifd: Interface 'wan' is now up
+Tue Jan  3 00:26:22 2023 daemon.info avahi-daemon[1475]: Found user 'nobody' (UID 65534) and group 'nogroup' (GID 65534).
+Tue Jan  3 00:26:22 2023 daemon.info avahi-daemon[1475]: Successfully dropped root privileges.
+Tue Jan  3 00:26:22 2023 daemon.info avahi-daemon[1475]: avahi-daemon 0.8 starting up.
+Tue Jan  3 00:26:22 2023 daemon.warn avahi-daemon[1475]: WARNING: No NSS support for mDNS detected, consider installing nss-mdns!
+Tue Jan  3 00:26:22 2023 daemon.info avahi-daemon[1475]: No service file found in /etc/avahi/services.
+Tue Jan  3 00:26:22 2023 daemon.info avahi-daemon[1475]: Joining mDNS multicast group on interface eth0.2.IPv6 with address fe80::ca8e:d1ff:fe90:91b6.
+Tue Jan  3 00:26:22 2023 daemon.info avahi-daemon[1475]: New relevant interface eth0.2.IPv6 for mDNS.
+Tue Jan  3 00:26:22 2023 daemon.info avahi-daemon[1475]: Joining mDNS multicast group on interface eth0.2.IPv4 with address 172.16.0.2.
+Tue Jan  3 00:26:22 2023 daemon.info avahi-daemon[1475]: New relevant interface eth0.2.IPv4 for mDNS.
+Tue Jan  3 00:26:22 2023 daemon.info avahi-daemon[1475]: Joining mDNS multicast group on interface br-lan.IPv6 with address fd2c:d700:aa6e::1.
+Tue Jan  3 00:26:22 2023 daemon.info avahi-daemon[1475]: New relevant interface br-lan.IPv6 for mDNS.
+Tue Jan  3 00:26:22 2023 daemon.info avahi-daemon[1475]: Joining mDNS multicast group on interface br-lan.IPv4 with address 192.168.1.1.
+Tue Jan  3 00:26:22 2023 daemon.info avahi-daemon[1475]: New relevant interface br-lan.IPv4 for mDNS.
+Tue Jan  3 00:26:22 2023 daemon.info avahi-daemon[1475]: Joining mDNS multicast group on interface eth0.IPv6 with address fe80::84b1:77ff:fe45:6a03.
+Tue Jan  3 00:26:22 2023 daemon.info avahi-daemon[1475]: New relevant interface eth0.IPv6 for mDNS.
+Tue Jan  3 00:26:22 2023 daemon.info avahi-daemon[1475]: Joining mDNS multicast group on interface lo.IPv6 with address ::1.
+Tue Jan  3 00:26:22 2023 daemon.info avahi-daemon[1475]: New relevant interface lo.IPv6 for mDNS.
+Tue Jan  3 00:26:22 2023 daemon.info avahi-daemon[1475]: Joining mDNS multicast group on interface lo.IPv4 with address 127.0.0.1.
+Tue Jan  3 00:26:22 2023 daemon.info avahi-daemon[1475]: New relevant interface lo.IPv4 for mDNS.
+Tue Jan  3 00:26:22 2023 daemon.info avahi-daemon[1475]: Network interface enumeration completed.
+Tue Jan  3 00:26:22 2023 daemon.info avahi-daemon[1475]: Registering new address record for fe80::ca8e:d1ff:fe90:91b6 on eth0.2.*.
+Tue Jan  3 00:26:22 2023 daemon.info avahi-daemon[1475]: Registering new address record for 172.16.0.2 on eth0.2.IPv4.
+Tue Jan  3 00:26:22 2023 daemon.info avahi-daemon[1475]: Registering new address record for fd2c:d700:aa6e::1 on br-lan.*.
+Tue Jan  3 00:26:22 2023 daemon.info avahi-daemon[1475]: Registering new address record for 192.168.1.1 on br-lan.IPv4.
+Tue Jan  3 00:26:22 2023 daemon.info avahi-daemon[1475]: Registering new address record for fe80::84b1:77ff:fe45:6a03 on eth0.*.
+Tue Jan  3 00:26:22 2023 daemon.info avahi-daemon[1475]: Registering new address record for ::1 on lo.*.
+Tue Jan  3 00:26:22 2023 daemon.info avahi-daemon[1475]: Registering new address record for 127.0.0.1 on lo.IPv4.
+Tue Jan  3 00:26:22 2023 daemon.info avahi-daemon[1475]: Registering HINFO record with values 'MIPS'/'LINUX'.
+Tue Jan  3 00:26:22 2023 user.notice ucitrack: Setting up /etc/config/dhcp reload dependency on /etc/config/network
+Tue Jan  3 00:26:22 2023 user.notice ucitrack: Setting up /etc/config/network reload dependency on /etc/config/wireless
+Tue Jan  3 00:26:23 2023 daemon.info avahi-daemon[1475]: Server startup complete. Host name is MixtileClusterBox.local. Local service cookie is 3794395311.
+Tue Jan  3 00:26:23 2023 user.notice ucitrack: Setting up /etc/config/luci-splash reload dependency on /etc/config/firewall
+Tue Jan  3 00:26:23 2023 user.notice ucitrack: Setting up /etc/config/qos reload dependency on /etc/config/firewall
+Tue Jan  3 00:26:23 2023 user.notice ucitrack: Setting up /etc/config/miniupnpd reload dependency on /etc/config/firewall
+Tue Jan  3 00:26:24 2023 user.notice ucitrack: Setting up /etc/config/odhcpd reload dependency on /etc/config/dhcp
+Tue Jan  3 00:26:24 2023 daemon.notice procd: /etc/rc.d/S80ucitrack: /etc/init.d/dropbear: line 1: syntax error: unterminated quoted string
+Tue Jan  3 00:26:24 2023 user.notice ucitrack: Setting up non-init /etc/config/fstab reload handler: /sbin/block mount
+Tue Jan  3 00:26:25 2023 user.notice ucitrack: Setting up /etc/config/system reload trigger for non-procd /etc/init.d/led
+Tue Jan  3 00:26:25 2023 user.notice ucitrack: Setting up /etc/config/luci_statistics reload dependency on /etc/config/system
+Tue Jan  3 00:26:26 2023 user.notice ucitrack: Setting up /etc/config/dhcp reload dependency on /etc/config/system
+Tue Jan  3 00:26:27 2023 kern.info kernel: [   52.312586] pci_bus 0000:03: busn_res: [bus 03] is released
+Tue Jan  3 00:26:27 2023 kern.info kernel: [   52.324170] pci_bus 0000:04: busn_res: [bus 04] is released
+Tue Jan  3 00:26:27 2023 kern.info kernel: [   52.335658] pci_bus 0000:05: busn_res: [bus 05] is released
+Tue Jan  3 00:26:27 2023 kern.info kernel: [   52.347179] pci_bus 0000:06: busn_res: [bus 06] is released
+Tue Jan  3 00:26:27 2023 kern.info kernel: [   52.358686] pci_bus 0000:02: busn_res: [bus 02-06] is released
+Tue Jan  3 00:26:27 2023 kern.info kernel: [   52.370709] pci_bus 0000:01: busn_res: [bus 01-06] is released
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   52.461412] pci 0000:00:00.0: [1814:0801] type 01 class 0x060400
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   52.473521] pci 0000:00:00.0: reg 0x10: [mem 0x00000000-0x7fffffff]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   52.486050] pci 0000:00:00.0: reg 0x14: [mem 0x20000000-0x2000ffff]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   52.498635] pci 0000:00:00.0: supports D1
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   52.506657] pci 0000:00:00.0: PME# supported from D0 D1 D3hot
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   52.520522] pci 0000:01:00.0: [1b21:2824] type 01 class 0x060400
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   52.532806] pci 0000:01:00.0: PME# supported from D0 D3hot D3cold
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   52.545026] pci 0000:01:00.0: 2.000 Gb/s available PCIe bandwidth, limited by 2.5 GT/s PCIe x1 link at 0000:00:00.0 (capable of 63.008 Gb/s with 8.0 GT/s PCIe x8 link)
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   52.577228] pci 0000:02:00.0: [1b21:2824] type 01 class 0x060400
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   52.589511] pci 0000:02:00.0: PME# supported from D0 D3hot D3cold
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   52.602356] pci 0000:02:04.0: [1b21:2824] type 01 class 0x060400
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   52.614640] pci 0000:02:04.0: PME# supported from D0 D3hot D3cold
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   52.627882] pci 0000:02:08.0: [1b21:2824] type 01 class 0x060400
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   52.640192] pci 0000:02:08.0: PME# supported from D0 D3hot D3cold
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   52.653041] pci 0000:02:0c.0: [1b21:2824] type 01 class 0x060400
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   52.665322] pci 0000:02:0c.0: PME# supported from D0 D3hot D3cold
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   52.679274] pci 0000:03:00.0: [4586:b6f2] type 00 class 0x028000
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   52.691377] pci 0000:03:00.0: reg 0x10: [mem 0x00000000-0x01ffffff 64bit pref]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   52.705864] pci 0000:03:00.0: reg 0x20: [mem 0x00000000-0x000fffff 64bit pref]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   52.720297] pci 0000:03:00.0: reg 0x30: [mem 0x00000000-0x0000ffff pref]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   52.733873] pci 0000:03:00.0: supports D1 D2
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   52.742389] pci 0000:03:00.0: PME# supported from D0 D1 D3hot
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   52.753964] pci 0000:03:00.0: 2.000 Gb/s available PCIe bandwidth, limited by 2.5 GT/s PCIe x1 link at 0000:00:00.0 (capable of 31.504 Gb/s with 8.0 GT/s PCIe x4 link)
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   52.785719] pci_bus 0000:03: busn_res: [bus 03-06] end is updated to 03
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   52.799366] pci 0000:04:00.0: [4586:b6f2] type 00 class 0x028000
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   52.811481] pci 0000:04:00.0: reg 0x10: [mem 0x00000000-0x01ffffff 64bit pref]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   52.825959] pci 0000:04:00.0: reg 0x20: [mem 0x00000000-0x000fffff 64bit pref]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   52.840392] pci 0000:04:00.0: reg 0x30: [mem 0x00000000-0x0000ffff pref]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   52.853974] pci 0000:04:00.0: supports D1 D2
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   52.862491] pci 0000:04:00.0: PME# supported from D0 D1 D3hot
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   52.874061] pci 0000:04:00.0: 2.000 Gb/s available PCIe bandwidth, limited by 2.5 GT/s PCIe x1 link at 0000:00:00.0 (capable of 31.504 Gb/s with 8.0 GT/s PCIe x4 link)
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   52.905856] pci_bus 0000:04: busn_res: [bus 04-06] end is updated to 04
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   52.919457] pci 0000:05:00.0: [4586:b6f2] type 00 class 0x028000
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   52.931559] pci 0000:05:00.0: reg 0x10: [mem 0x00000000-0x01ffffff 64bit pref]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   52.946038] pci 0000:05:00.0: reg 0x20: [mem 0x00000000-0x000fffff 64bit pref]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   52.960469] pci 0000:05:00.0: reg 0x30: [mem 0x00000000-0x0000ffff pref]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   52.974054] pci 0000:05:00.0: supports D1 D2
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   52.982570] pci 0000:05:00.0: PME# supported from D0 D1 D3hot
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   52.994139] pci 0000:05:00.0: 2.000 Gb/s available PCIe bandwidth, limited by 2.5 GT/s PCIe x1 link at 0000:00:00.0 (capable of 31.504 Gb/s with 8.0 GT/s PCIe x4 link)
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.025950] pci_bus 0000:05: busn_res: [bus 05-06] end is updated to 05
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.039557] pci 0000:06:00.0: [4586:b6f2] type 00 class 0x028000
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.051671] pci 0000:06:00.0: reg 0x10: [mem 0x00000000-0x01ffffff 64bit pref]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.066150] pci 0000:06:00.0: reg 0x20: [mem 0x00000000-0x000fffff 64bit pref]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.080584] pci 0000:06:00.0: reg 0x30: [mem 0x00000000-0x0000ffff pref]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.094165] pci 0000:06:00.0: supports D1 D2
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.102681] pci 0000:06:00.0: PME# supported from D0 D1 D3hot
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.114250] pci 0000:06:00.0: 2.000 Gb/s available PCIe bandwidth, limited by 2.5 GT/s PCIe x1 link at 0000:00:00.0 (capable of 31.504 Gb/s with 8.0 GT/s PCIe x4 link)
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.146013] pci_bus 0000:06: busn_res: [bus 06] end is updated to 06
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.158756] pci_bus 0000:02: busn_res: [bus 02-06] end is updated to 06
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.171964] pci_bus 0000:01: busn_res: [bus 01-06] end is updated to 06
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.185249] pci 0000:00:00.0: BAR 0: no space for [mem size 0x80000000]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.198457] pci 0000:00:00.0: BAR 0: failed to assign [mem size 0x80000000]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.212353] pci 0000:00:00.0: BAR 9: assigned [mem 0x20000000-0x2bffffff pref]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.226767] pci 0000:00:00.0: BAR 8: assigned [mem 0x2c000000-0x2c3fffff]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.240318] pci 0000:00:00.0: BAR 1: assigned [mem 0x2c400000-0x2c40ffff]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.253891] pci 0000:01:00.0: BAR 9: assigned [mem 0x20000000-0x2bffffff 64bit pref]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.269361] pci 0000:01:00.0: BAR 8: assigned [mem 0x2c000000-0x2c3fffff]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.282929] pci 0000:02:00.0: BAR 9: assigned [mem 0x20000000-0x22ffffff 64bit pref]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.298389] pci 0000:02:04.0: BAR 9: assigned [mem 0x23000000-0x25ffffff 64bit pref]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.313844] pci 0000:02:08.0: BAR 9: assigned [mem 0x26000000-0x28ffffff 64bit pref]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.329300] pci 0000:02:0c.0: BAR 9: assigned [mem 0x29000000-0x2bffffff 64bit pref]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.344753] pci 0000:02:00.0: BAR 8: assigned [mem 0x2c000000-0x2c0fffff]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.358302] pci 0000:02:04.0: BAR 8: assigned [mem 0x2c100000-0x2c1fffff]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.371856] pci 0000:02:08.0: BAR 8: assigned [mem 0x2c200000-0x2c2fffff]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.385406] pci 0000:02:0c.0: BAR 8: assigned [mem 0x2c300000-0x2c3fffff]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.398964] pci 0000:03:00.0: BAR 0: assigned [mem 0x20000000-0x21ffffff 64bit pref]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.414442] pci 0000:03:00.0: BAR 4: assigned [mem 0x22000000-0x220fffff 64bit pref]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.429913] pci 0000:03:00.0: BAR 6: assigned [mem 0x2c000000-0x2c00ffff pref]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.444327] pci 0000:02:00.0: PCI bridge to [bus 03]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.454246] pci 0000:02:00.0:   bridge window [mem 0x2c000000-0x2c0fffff]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.467795] pci 0000:02:00.0:   bridge window [mem 0x20000000-0x22ffffff 64bit pref]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.483265] pci 0000:04:00.0: BAR 0: assigned [mem 0x24000000-0x25ffffff 64bit pref]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.498741] pci 0000:04:00.0: BAR 4: assigned [mem 0x23000000-0x230fffff 64bit pref]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.514215] pci 0000:04:00.0: BAR 6: assigned [mem 0x2c100000-0x2c10ffff pref]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.528626] pci 0000:02:04.0: PCI bridge to [bus 04]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.538542] pci 0000:02:04.0:   bridge window [mem 0x2c100000-0x2c1fffff]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.552090] pci 0000:02:04.0:   bridge window [mem 0x23000000-0x25ffffff 64bit pref]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.567558] pci 0000:05:00.0: BAR 0: assigned [mem 0x26000000-0x27ffffff 64bit pref]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.583041] pci 0000:05:00.0: BAR 4: assigned [mem 0x28000000-0x280fffff 64bit pref]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.598515] pci 0000:05:00.0: BAR 6: assigned [mem 0x2c200000-0x2c20ffff pref]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.612929] pci 0000:02:08.0: PCI bridge to [bus 05]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.622846] pci 0000:02:08.0:   bridge window [mem 0x2c200000-0x2c2fffff]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.636395] pci 0000:02:08.0:   bridge window [mem 0x26000000-0x28ffffff 64bit pref]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.651865] pci 0000:06:00.0: BAR 0: assigned [mem 0x2a000000-0x2bffffff 64bit pref]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.667341] pci 0000:06:00.0: BAR 4: assigned [mem 0x29000000-0x290fffff 64bit pref]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.682813] pci 0000:06:00.0: BAR 6: assigned [mem 0x2c300000-0x2c30ffff pref]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.697225] pci 0000:02:0c.0: PCI bridge to [bus 06]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.707143] pci 0000:02:0c.0:   bridge window [mem 0x2c300000-0x2c3fffff]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.720691] pci 0000:02:0c.0:   bridge window [mem 0x29000000-0x2bffffff 64bit pref]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.736145] pci 0000:01:00.0: PCI bridge to [bus 02-06]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.746582] pci 0000:01:00.0:   bridge window [mem 0x2c000000-0x2c3fffff]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.760136] pci 0000:01:00.0:   bridge window [mem 0x20000000-0x2bffffff 64bit pref]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.775593] pci 0000:00:00.0: PCI bridge to [bus 01-06]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.786024] pci 0000:00:00.0:   bridge window [mem 0x2c000000-0x2c3fffff]
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.799568] pci 0000:00:00.0:   bridge window [mem 0x20000000-0x2bffffff pref]
+Tue Jan  3 00:26:28 2023 kern.err kernel: [   53.814130] pcieport 0000:00:00.0: card - bus=0x0, slot = 0x0 irq=0
+Tue Jan  3 00:26:28 2023 kern.err kernel: [   53.826872] pcieport 0000:01:00.0: card - bus=0x1, slot = 0x0 irq=4
+Tue Jan  3 00:26:28 2023 kern.err kernel: [   53.839814] pcieport 0000:02:00.0: card - bus=0x2, slot = 0x0 irq=4
+Tue Jan  3 00:26:28 2023 kern.err kernel: [   53.852887] pcieport 0000:02:04.0: card - bus=0x2, slot = 0x0 irq=4
+Tue Jan  3 00:26:28 2023 kern.err kernel: [   53.865981] pcieport 0000:02:08.0: card - bus=0x2, slot = 0x0 irq=4
+Tue Jan  3 00:26:28 2023 kern.err kernel: [   53.879059] pcieport 0000:02:0c.0: card - bus=0x2, slot = 0x0 irq=4
+Tue Jan  3 00:26:28 2023 kern.err kernel: [   53.892219] miop 0000:03:00.0: card - bus=0x3, slot = 0x0 irq=4
+Tue Jan  3 00:26:28 2023 kern.info kernel: [   53.904142] miop 0000:03:00.0: probing MIOP node on bus:03
+Tue Jan  3 00:26:29 2023 kern.info kernel: [   54.335496] miop 0000:03:00.0: PCIe bus number 3 mapped to MIOP node id: 3
+Tue Jan  3 00:26:29 2023 kern.warn kernel: [   54.350441] miop 0000:03:00.0: pci_alloc_irq_vectors() only alloc 1 vectors
+Tue Jan  3 00:26:29 2023 kern.info kernel: [   54.365182] miop 0000:03:00.0: MIOP node[3] on bus:03 is online
+Tue Jan  3 00:26:29 2023 kern.err kernel: [   54.377354] miop 0000:04:00.0: card - bus=0x4, slot = 0x0 irq=4
+Tue Jan  3 00:26:29 2023 kern.info kernel: [   54.389252] miop 0000:04:00.0: probing MIOP node on bus:04
+Tue Jan  3 00:26:29 2023 kern.info kernel: [   54.400200] miop 0000:04:00.0: PCIe bus number 4 mapped to MIOP node id: 2
+Tue Jan  3 00:26:29 2023 kern.warn kernel: [   54.415238] miop 0000:04:00.0: pci_alloc_irq_vectors() only alloc 1 vectors
+Tue Jan  3 00:26:29 2023 kern.info kernel: [   54.429981] miop 0000:04:00.0: MIOP node[2] on bus:04 is online
+Tue Jan  3 00:26:29 2023 kern.err kernel: [   54.442159] miop 0000:05:00.0: card - bus=0x5, slot = 0x0 irq=4
+Tue Jan  3 00:26:29 2023 kern.info kernel: [   54.454060] miop 0000:05:00.0: probing MIOP node on bus:05
+Tue Jan  3 00:26:29 2023 kern.info kernel: [   54.465011] miop 0000:05:00.0: PCIe bus number 5 mapped to MIOP node id: 1
+Tue Jan  3 00:26:29 2023 kern.warn kernel: [   54.479850] miop 0000:05:00.0: pci_alloc_irq_vectors() only alloc 1 vectors
+Tue Jan  3 00:26:29 2023 kern.info kernel: [   54.494559] miop 0000:05:00.0: MIOP node[1] on bus:05 is online
+Tue Jan  3 00:26:29 2023 kern.err kernel: [   54.506694] miop 0000:06:00.0: card - bus=0x6, slot = 0x0 irq=4
+Tue Jan  3 00:26:29 2023 kern.info kernel: [   54.518580] miop 0000:06:00.0: probing MIOP node on bus:06
+Tue Jan  3 00:26:29 2023 kern.info kernel: [   54.529528] miop 0000:06:00.0: PCIe bus number 6 mapped to MIOP node id: 0
+Tue Jan  3 00:26:29 2023 kern.warn kernel: [   54.544388] miop 0000:06:00.0: pci_alloc_irq_vectors() only alloc 1 vectors
+Tue Jan  3 00:26:29 2023 kern.info kernel: [   54.559076] miop 0000:06:00.0: MIOP node[0] on bus:06 is online
+Tue Jan  3 00:26:29 2023 kern.warn kernel: [   54.664926] miop 0000:06:00.0: TX[0]: Queue is full.
+Tue Jan  3 00:26:29 2023 kern.warn kernel: [   54.674911] miop 0000:05:00.0: TX[1]: Queue is full.
+Tue Jan  3 00:26:29 2023 daemon.notice netifd: Interface 'eth_pci' is enabled
+Tue Jan  3 00:26:29 2023 daemon.notice netifd: Interface 'eth_pci' is setting up now
+Tue Jan  3 00:26:29 2023 daemon.info avahi-daemon[1475]: Joining mDNS multicast group on interface pci0.IPv4 with address 10.20.0.1.
+Tue Jan  3 00:26:29 2023 daemon.info avahi-daemon[1475]: New relevant interface pci0.IPv4 for mDNS.
+Tue Jan  3 00:26:29 2023 daemon.info avahi-daemon[1475]: Registering new address record for 10.20.0.1 on pci0.IPv4.
+Tue Jan  3 00:26:29 2023 daemon.info avahi-daemon[1475]: Joining mDNS multicast group on interface pci0.IPv6 with address fd2c:d700:aa6e:10::1.
+Tue Jan  3 00:26:29 2023 daemon.info avahi-daemon[1475]: New relevant interface pci0.IPv6 for mDNS.
+Tue Jan  3 00:26:29 2023 daemon.info avahi-daemon[1475]: Registering new address record for fd2c:d700:aa6e:10::1 on pci0.*.
+Tue Jan  3 00:26:29 2023 daemon.notice netifd: Interface 'eth_pci' is now up
+Tue Jan  3 00:26:29 2023 daemon.notice netifd: Network device 'pci0' link is up
+Tue Jan  3 00:26:29 2023 daemon.notice netifd: Interface 'eth_pci' has link connectivity
+Tue Jan  3 00:26:30 2023 daemon.err odhcpd[1137]: Failed to send to ff02::1%eth_pci@pci0 (Address not available)
+Tue Jan  3 00:26:39 2023 user.info : luci: accepted login on / for mixtile from 172.16.0.1
+Tue Jan  3 00:26:39 2023 daemon.err wsdd2: samba36/4 or ksmbd is not running, can't start wsdd2!
+Tue Jan  3 00:26:39 2023 daemon.info procd: - init complete -

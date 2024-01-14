@@ -1,0 +1,79 @@
+Hard unplug notes:
+1. Unplugged while box had not requested DHCP lease
+2. DHCP discovery request 2 mins later
+3. Web interface allows login
+4. Dropbear not running according to processes page
+5. System log reports:
+```
+Tue Jan  3 00:56:56 2023 kern.info kernel: [   28.710582] do_page_fault(): sending SIGSEGV to lua for invalid read access from 08200418
+Tue Jan  3 00:56:56 2023 kern.info kernel: [   28.726964] epc = 77dd312f in liblua.so.5.1.5[77dc5000+2e000]
+Tue Jan  3 00:56:56 2023 kern.info kernel: [   28.738496] ra  = 77dd31c3 in liblua.so.5.1.5[77dc5000+2e000]
+Tue Jan  3 00:56:56 2023 kern.info kernel: [   28.808222] do_page_fault(): sending SIGSEGV to S19dnsmasq for invalid read access from 00b0f7dc
+Tue Jan  3 00:56:56 2023 kern.info kernel: [   28.825834] epc = 77dc0c28 in libc.so[77d8e000+a9000]
+Tue Jan  3 00:56:56 2023 kern.info kernel: [   28.835962] ra  = 77dc0b6c in libc.so[77d8e000+a9000]
+Tue Jan  3 00:56:56 2023 kern.info kernel: [   29.301982] do_page_fault(): sending SIGSEGV to dropbearkey for invalid read access from 5b2a9084
+Tue Jan  3 00:56:56 2023 kern.info kernel: [   29.319746] epc = 5b2a9084 in libgcc_s.so.1[77e0e000+22000]
+Tue Jan  3 00:56:56 2023 kern.info kernel: [   29.330919] ra  = 5562d8b8 in dropbear[55600000+36000]
+Tue Jan  3 00:56:56 2023 kern.info kernel: [   29.362712] do_page_fault(): sending SIGSEGV to dropbearkey for invalid write access to 555ec010
+Tue Jan  3 00:56:56 2023 kern.info kernel: [   29.380333] epc = 555ed864 in dropbear[555c0000+36000]
+Tue Jan  3 00:56:56 2023 kern.info kernel: [   29.390650] ra  = 555d5e04 in dropbear[555c0000+36000]
+Tue Jan  3 00:56:56 2023 kern.info kernel: [   29.415014] do_page_fault(): sending SIGSEGV to dropbearkey for invalid write access to 0001f752
+Tue Jan  3 00:56:56 2023 kern.info kernel: [   29.432603] epc = 5561e48c in dropbear[555f0000+36000]
+Tue Jan  3 00:56:56 2023 kern.info kernel: [   29.442907] ra  = 555f2010 in dropbear[555f0000+36000]
+Tue Jan  3 00:56:57 2023 kern.info kernel: [   29.466937] do_page_fault(): sending SIGSEGV to dropbearkey for invalid write access to 77e7e37e
+Tue Jan  3 00:56:57 2023 kern.info kernel: [   29.484557] epc = 5559e48c in dropbear[55570000+36000]
+Tue Jan  3 00:56:57 2023 kern.info kernel: [   29.494866] ra  = 55572010 in dropbear[55570000+36000]
+Tue Jan  3 00:57:02 2023 kern.info kernel: [   35.312827] do_page_fault(): sending SIGSEGV to dropbear for invalid write access to 77e3837e
+Tue Jan  3 00:57:02 2023 kern.info kernel: [   35.329931] epc = 5561e48c in dropbear[555f0000+36000]
+Tue Jan  3 00:57:02 2023 kern.info kernel: [   35.340250] ra  = 555f2010 in dropbear[555f0000+36000]
+...
+Tue Jan  3 00:57:37 2023 kern.info kernel: [   65.179424] do_page_fault(): sending SIGSEGV to dropbear for invalid read access from 00002c20
+Tue Jan  3 00:57:37 2023 kern.info kernel: [   65.196699] epc = 5563e4c4 in dropbear[55610000+36000]
+Tue Jan  3 00:57:37 2023 kern.info kernel: [   65.207006] ra  = 55612010 in dropbear[55610000+36000]
+Tue Jan  3 00:57:47 2023 daemon.info procd: Instance dropbear::instance2 s in a crash loop 6 crashes, 0 seconds since last crash
+```
+6. Started dropbear process via "Startup" page
+7. Happened again:
+```
+Tue Jan  3 01:01:39 2023 kern.info kernel: [  170.509851] do_page_fault(): sending SIGSEGV to dropbearkey for invalid write access to 77e1d256
+Tue Jan  3 01:01:39 2023 kern.info kernel: [  170.527425] epc = 555be4a4 in dropbear[55590000+36000]
+Tue Jan  3 01:01:39 2023 kern.info kernel: [  170.537740] ra  = 55592010 in dropbear[55590000+36000]
+Tue Jan  3 01:01:39 2023 kern.info kernel: [  170.592512] do_page_fault(): sending SIGSEGV to dropbearkey for invalid write access to 77eae256
+Tue Jan  3 01:01:39 2023 kern.info kernel: [  170.610137] epc = 555ce4a4 in dropbear[555a0000+36000]
+Tue Jan  3 01:01:39 2023 kern.info kernel: [  170.620462] ra  = 555a2010 in dropbear[555a0000+36000]
+Tue Jan  3 01:01:39 2023 kern.info kernel: [  170.645545] do_page_fault(): sending SIGSEGV to dropbearkey for invalid write access to 77e4b256
+Tue Jan  3 01:01:39 2023 kern.info kernel: [  170.663148] epc = 555fe4a4 in dropbear[555d0000+36000]
+Tue Jan  3 01:01:39 2023 kern.info kernel: [  170.673462] ra  = 555d2010 in dropbear[555d0000+36000]
+Tue Jan  3 01:01:40 2023 kern.info kernel: [  171.254798] do_page_fault(): sending SIGSEGV to dropbear for invalid write access to 77e55256
+Tue Jan  3 01:01:40 2023 kern.info kernel: [  171.271893] epc = 555ae4a4 in dropbear[55580000+36000]
+Tue Jan  3 01:01:40 2023 kern.info kernel: [  171.282217] ra  = 55582010 in dropbear[55580000+36000]
+Tue Jan  3 01:01:40 2023 kern.info kernel: [  171.304762] do_page_fault(): sending SIGSEGV to dropbear for invalid write access to 77e0b256
+Tue Jan  3 01:01:40 2023 kern.info kernel: [  171.321850] epc = 5564e4a4 in dropbear[55620000+36000]
+Tue Jan  3 01:01:40 2023 kern.info kernel: [  171.332160] ra  = 55622010 in dropbear[55620000+36000]
+Tue Jan  3 01:01:40 2023 daemon.info procd: Instance dropbear::instance2 s in a crash loop 7 crashes, 0 seconds since last crash
+Tue Jan  3 01:01:40 2023 daemon.info procd: Instance dropbear::instance1 s in a crash loop 7 crashes, 0 seconds since last crash
+```
+8. Reboot via reboot page
+    1. Appears to actually have rebooted, NIC connection reset @ L1
+9. Reboot, used new MAC address
+10. Still in crash loop, same exact instruction, but different places
+11. Getting periodic:
+```
+Tue Jan  3 01:05:50 2023 kern.warn kernel: [   58.283949] miop 0000:06:00.0: TX[0]: Queue is full.
+also
+Tue Jan  3 01:05:50 2023 kern.warn kernel: [   57.969350] miop 0000:0<3, 4, 5, 6>:00.0: pci_alloc_irq_vectors() only alloc 1 vectors
+
+Tue Jan  3 01:05:17 2023 kern.warn kernel: [    3.038091] mtd: partition "kernel" doesn't end on an erase/write block -- force read-only
+Tue Jan  3 01:05:17 2023 kern.warn kernel: [    3.067900] mtd: partition "rootfs" doesn't start on an erase/write block boundary -- force read-only
+```
+12. Powering off via plug pull again, waited 30s  before replug
+13. Lights on node turned off/on 6x, then pulled power again
+14. Unplugged all blades and powered on again
+15. 10m later, no DHCP discovery
+16. Came back about 2 hours later, dhcp lease was requested (new MAC address again). Got
+```
+/usr/lib/lua/luci/dispatcher.lua:431: /etc/config/luci seems to be corrupt, unable to find section 'main'
+```
+again, but ssh access now works
+
+nor flash part number: https://www.winbond.com/hq/product/code-storage-flash-memory/serial-nor-flash/?__locale=en&partNo=W25Q128JV
