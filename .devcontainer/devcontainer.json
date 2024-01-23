@@ -15,13 +15,14 @@
 		4000 // Jekyll port
 	],
 	"onCreateCommand": "gem install jekyll bundler",
-	"postCreateCommand": "bundler install && (bundler exec jekyll serve --watch --livereload 2>&1 >> /tmp/jekyll-serve; echo 'EXIT CODE $?' >> /tmp/exitcode &)",
+	"postCreateCommand": "bundler install && (bundler exec jekyll serve --watch --livereload --force_polling 2>&1 >> /tmp/jekyll-serve; echo 'EXIT CODE $?' >> /tmp/exitcode &)",
 	"customizations": {
 		"vscode": {
 			"extensions": [
 				"ginfuru.ginfuru-vscode-jekyll-syntax",
 				"yzhang.markdown-all-in-one",
-				"ban.spellright"
+				"ban.spellright",
+				"streetsidesoftware.code-spell-checker"
 			]
 		}
 	}
