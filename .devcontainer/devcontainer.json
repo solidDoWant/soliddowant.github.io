@@ -4,7 +4,7 @@
 	"name": "Ubuntu",
 	"image": "mcr.microsoft.com/devcontainers/base:jammy",
 	"features": {
-		"ghcr.io/devcontainers/features/ruby:1": {
+		"ghcr.io/devcontainers/features/ruby:2": {
 			"version": "latest"
 		},
 		"ghcr.io/devcontainers/features/github-cli": {
